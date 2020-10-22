@@ -57,15 +57,15 @@ def test(args, model, device, test_loader):
 
 def main():
     # Training settings
-    parser = argparse.ArgumentParser(description='')
+    parser = argparse.ArgumentParser(description='Rotations prediction experiment')
     parser.add_argument('--batch-size', type=int, default=100, metavar='N',
                         help='input batch size for training (default: 64)')
     parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
                         help='input batch size for testing (default: 1000)')
     parser.add_argument('--width_g', type=int, default=20, metavar='N',
-                        help='')
+                        help='width of g')
     parser.add_argument('--depth_g', type=int, default=3, metavar='N',
-                        help='')
+                        help='depth of g')
     parser.add_argument('--epochs', type=int, default=100, metavar='N',
                         help='number of epochs to train (default: 14)')
     parser.add_argument('--lr', type=float, default=.01, metavar='LR',
